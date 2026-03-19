@@ -1,10 +1,263 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jeongeun Park</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.7;
+      color: #222;
+      background: #fff;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    header {
+      padding: 28px 0 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-start;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-size: 15px;
+      margin-bottom: 28px;
+    }
+
+    nav a {
+      color: #222;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 32px;
+      align-items: start;
+      padding: 10px 0 28px;
+    }
+
+    .profile-img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid #e5e5e5;
+      background: #f5f5f5;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin: 0 0 14px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0 0 14px;
+      font-size: 16px;
+    }
+
+    section {
+      padding: 18px 0;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 0 0 14px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin: 20px 0 10px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e5e5e5;
+      margin: 12px 0 18px;
+    }
+
+    .news-list {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .news-list li {
+      margin-bottom: 10px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    .link-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .link-list li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #1a73e8;
+    }
+
+    .muted {
+      color: #666;
+    }
+
+    @media (max-width: 720px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-img {
+        width: 180px;
+        height: 180px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>lololo</h1>
-  <p>oh yeah</p>
+  <div class="container">
+    <header>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#cv">CV</a>
+        <a href="#publications">Publications</a>
+        <a href="#creations">Creations</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="about">
+        <img src="profile.jpg" alt="Jeongeun Park profile photo" class="profile-img" />
+
+        <div>
+          <h1>Jeongeun Park</h1>
+          <p>
+            I am a student / researcher interested in computer science, graphics,
+            AI, and creative technology.
+          </p>
+          <p>
+            Welcome to my personal website. Here you can find my background,
+            publications, projects, and contact information.
+          </p>
+          <p class="muted">
+            You can replace this introduction with your own affiliation, lab,
+            university, advisor, and research interests.
+          </p>
+        </div>
+      </section>
+
+      <section id="news">
+        <h2>News</h2>
+        <hr />
+        <ul class="news-list">
+          <li><strong>Mar, 2026</strong> — Launched my personal academic website.</li>
+          <li><strong>Feb, 2026</strong> — Started a new project on interactive AI systems.</li>
+          <li><strong>Jan, 2026</strong> — Presented my work at a university seminar.</li>
+        </ul>
+      </section>
+
+      <section id="cv">
+        <h2>CV</h2>
+        <p>
+          Download my CV:
+          <a href="cv.pdf" target="_blank">cv.pdf</a>
+        </p>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <p class="muted">Add your papers, preprints, or thesis here.</p>
+
+        <p>
+          <strong>Paper Title 1</strong><br />
+          Jeongeun Park, Coauthor Name<br />
+          <em>Conference / Journal Name, 2026</em><br />
+          <a href="#">Paper</a> |
+          <a href="#">Project Page</a> |
+          <a href="#">Code</a>
+        </p>
+
+        <p>
+          <strong>Paper Title 2</strong><br />
+          Jeongeun Park, Coauthor Name<br />
+          <em>Conference / Journal Name, 2025</em><br />
+          <a href="#">Paper</a>
+        </p>
+      </section>
+
+      <section id="creations">
+        <h2>Creations</h2>
+        <p class="muted">Add your side projects, demos, artworks, or experiments here.</p>
+
+        <p>
+          <strong>Project Name</strong><br />
+          Short description of your project goes here.<br />
+          <a href="#">Demo</a> |
+          <a href="#">GitHub</a>
+        </p>
+      </section>
+
+      <section>
+        <div class="footer-grid">
+          <div>
+            <h3>Contact</h3>
+            <ul class="link-list">
+              <li>Email: <a href="mailto:your_email@example.com">your_email@example.com</a></li>
+              <li>Location: South Korea</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Follow</h3>
+            <ul class="link-list">
+              <li><a href="https://github.com/your-github" target="_blank">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a></li>
+              <li><a href="https://scholar.google.com/" target="_blank">Google Scholar</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
