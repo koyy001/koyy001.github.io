@@ -1,90 +1,514 @@
----
-layout: none
-title: HL-OutPaint
-permalink: /Publications/hl-outpaint.html
----
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="HL-OutPaint is a high-resolution long-range video outpainting framework with a global coarse scaffold for large spatial extrapolation and long video sequences.">
+  <meta name="keywords" content="HL-OutPaint, Video Outpainting, SIGGRAPH 2026, Long Video, High Resolution">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HL-OutPaint: High-Resolution Long-Range Video Outpainting with a Global Coarse Scaffold</title>
 
-<div class="publication-container">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
 
-  <!-- Title -->
-  <h1 class="publication-title">
-    HL-OutPaint: High-Resolution Long-Range Video Outpainting with a Global Coarse Scaffold
-  </h1>
+  <link rel="stylesheet" href="./hl-outpaint_static/css/bulma.min.css">
+  <link rel="stylesheet" href="./hl-outpaint_static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./hl-outpaint_static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./hl-outpaint_static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./hl-outpaint_static/css/index.css">
+  <link rel="icon" href="./hl-outpaint_static/images/favicon.svg">
+</head>
+<body>
 
-  <h3 class="publication-venue">(Allay 2040)</h3>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <p class="publication-venue">SIGGRAPH 2026</p>
+          <h1 class="title is-1 publication-title">HL-OutPaint</h1>
+          <h2 class="subtitle is-4">
+            High-Resolution Long-Range Video Outpainting with a Global Coarse Scaffold
+          </h2>
 
-  <!-- Authors -->
-  <p class="publication-authors">
-    <strong>Jeongeun Park</strong> ·
-    <strong>Janghyeok Han</strong> ·
-    <strong>Geonung Kim</strong> ·
-    <strong>Hyun-Seung Lee</strong> ·
-    <strong>Kyuha Choi</strong> ·
-    <strong>Youngseok Han</strong> ·
-    <strong>Sunghyun Cho</strong>
-  </p>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Jeongeun Park<sup>1</sup>,</span>
+            <span class="author-block">Janghyeok Han<sup>2</sup>,</span>
+            <span class="author-block">Geonung Kim<sup>3</sup>,</span>
+            <span class="author-block">Hyun-Seung Lee<sup>4</sup>,</span>
+            <span class="author-block">Kyuha Choi<sup>4</sup>,</span>
+            <span class="author-block">Youngseok Han<sup>4</sup>,</span>
+            <span class="author-block">Sunghyun Cho<sup>5</sup></span>
+          </div>
 
-  <!-- Affiliation -->
-  <p class="publication-affiliation">
-    <b>POSTECH</b> · <b>Samsung Electronics, Visual Display Business</b>
-  </p>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">POSTECH, Samsung Electronics (Visual Display Business)</span>
+          </div>
 
-  <!-- Links -->
-  <div class="publication-links">
-    <a href="https://arxiv.org/abs/2503.07598">
-      <img src="https://img.shields.io/badge/Paper-arXiv-red" alt="Paper PDF">
-    </a>
-    <a href="https://koyy001.github.io/HL-OutPaint/">
-      <img src="https://img.shields.io/badge/Project-Page-green" alt="Project Page">
-    </a>
-    <a href="https://huggingface.co/koyy001/HL_OutPaint">
-      <img src="https://img.shields.io/badge/Model-HuggingFace-yellow" alt="HuggingFace Model">
-    </a>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2503.07598"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://youtu.be/FDY4wZeeU2M"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Demo Video</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://huggingface.co/koyy001/HL_OutPaint"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-cube"></i>
+                  </span>
+                  <span>Model</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#dataset"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="far fa-images"></i>
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
 
-  <hr>
-
-  <!-- Teaser (optional, 넣고 싶으면 사용) -->
-  <!--
-  <div class="publication-teaser">
-    <img src="/assets/images/hl-outpaint/teaser.png" alt="Teaser">
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline controls height="100%">
+        <source src="./hl-outpaint_static/videos/output/boat.mp4" type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        HL-OutPaint enables high-resolution video outpainting over long video sequences while preserving
+        global structure, local motion, and spatio-temporal coherence.
+      </h2>
+    </div>
   </div>
-  -->
+</section>
 
-  <!-- Abstract -->
-  <h2>Abstract</h2>
-  <p>
-    We present HL-OutPaint, a novel framework for high-resolution long-range video outpainting. 
-    Our method introduces a global coarse scaffold that enables consistent and coherent generation 
-    across extended spatial regions and long temporal sequences. By combining global structural guidance 
-    with high-resolution refinement, HL-OutPaint achieves superior visual quality and temporal consistency 
-    compared to prior approaches.
-  </p>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Highlights</h2>
+        <div class="content has-text-justified">
+          <p>
+            HL-OutPaint supports arbitrary input widths and heights and performs flexible video outpainting
+            across diverse target aspect ratios.
+          </p>
+          <p>
+            The method uses a two-stage coarse-to-fine pipeline with a Global Coarse Scaffold (GCS) to
+            preserve global scene layout and dominant motion patterns before refining fine spatial details.
+          </p>
+          <p>
+            Below, each example compares the original input video with the outpainted result generated by
+            HL-OutPaint.
+          </p>
+        </div>
+      </div>
+    </div>
 
-  <!-- Method -->
-  <h2>Method</h2>
-  <p>
-    HL-OutPaint decomposes the outpainting task into two stages: (1) global scaffold generation and 
-    (2) high-resolution refinement. The global scaffold captures long-range dependencies and ensures 
-    structural consistency, while the refinement stage enhances local details and visual fidelity.
-  </p>
+    <div class="columns is-multiline example-grid">
+      <div class="column is-half">
+        <div class="box">
+          <div class="columns is-mobile example-pair">
+            <div class="column example-pair-column">
+              <p class="has-text-weight-semibold">Input</p>
+              <video controls muted loop playsinline width="100%" data-sync-group="example-008">
+                <source src="./hl-outpaint_static/videos/input/008.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column example-pair-column">
+              <p class="has-text-weight-semibold">HL-OutPaint Output</p>
+              <video controls muted loop playsinline width="100%" data-sync-group="example-008">
+                <source src="./hl-outpaint_static/videos/output/008.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <!-- Results -->
-  <h2>Results</h2>
-  <p>
-    Our approach demonstrates strong performance on challenging video outpainting benchmarks, 
-    producing high-quality results with improved spatial coherence and temporal stability.
-  </p>
+      <div class="column is-half">
+        <div class="box">
+          <div class="columns is-mobile example-pair">
+            <div class="column example-pair-column">
+              <p class="has-text-weight-semibold">Input</p>
+              <video controls muted loop playsinline width="100%" data-sync-group="example-012">
+                <source src="./hl-outpaint_static/videos/input/012.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column example-pair-column">
+              <p class="has-text-weight-semibold">HL-OutPaint Output</p>
+              <video controls muted loop playsinline width="100%" data-sync-group="example-012">
+                <source src="./hl-outpaint_static/videos/output/012.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <!-- Citation -->
-  <h2>Citation</h2>
-  <pre>
-@article{park2026hloutpaint,
+      <div class="column is-half">
+        <div class="box">
+          <div class="columns is-mobile example-pair">
+            <div class="column example-pair-column">
+              <p class="has-text-weight-semibold">Input</p>
+              <video controls muted loop playsinline width="100%" data-sync-group="example-017">
+                <source src="./hl-outpaint_static/videos/input/017.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column example-pair-column">
+              <p class="has-text-weight-semibold">HL-OutPaint Output</p>
+              <video controls muted loop playsinline width="100%" data-sync-group="example-017">
+                <source src="./hl-outpaint_static/videos/output/017.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-half">
+        <div class="box">
+          <div class="columns is-mobile example-pair">
+            <div class="column example-pair-column">
+              <p class="has-text-weight-semibold">Input</p>
+              <video controls muted loop playsinline width="100%" data-sync-group="example-stroller">
+                <source src="./hl-outpaint_static/videos/input/stroller.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column example-pair-column">
+              <p class="has-text-weight-semibold">HL-OutPaint Output</p>
+              <video controls muted loop playsinline width="100%" data-sync-group="example-stroller">
+                <source src="./hl-outpaint_static/videos/output/stroller.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-half">
+        <div class="box">
+          <div class="columns is-mobile example-pair">
+            <div class="column example-pair-column">
+              <p class="has-text-weight-semibold">Input</p>
+              <video controls muted loop playsinline width="100%" data-sync-group="example-cat-girl">
+                <source src="./hl-outpaint_static/videos/input/cat_girl.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column example-pair-column">
+              <p class="has-text-weight-semibold">HL-OutPaint Output</p>
+              <video controls muted loop playsinline width="100%" data-sync-group="example-cat-girl">
+                <source src="./hl-outpaint_static/videos/output/cat_girl.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-half">
+        <div class="box">
+          <div class="columns is-mobile example-pair">
+            <div class="column example-pair-column">
+              <p class="has-text-weight-semibold">Input</p>
+              <video controls muted loop playsinline width="100%" data-sync-group="example-boat">
+                <source src="./hl-outpaint_static/videos/input/boat.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column example-pair-column">
+              <p class="has-text-weight-semibold">HL-OutPaint Output</p>
+              <video controls muted loop playsinline width="100%" data-sync-group="example-boat">
+                <source src="./hl-outpaint_static/videos/output/boat.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            <strong>Video outpainting</strong> is the task of generating plausible visual content beyond
+            the original spatial extent of a video. With video content increasingly consumed on displays
+            with diverse aspect ratios and resolutions, video outpainting plays a key role in adapting
+            videos to heterogeneous display formats. To accommodate such practical use cases, video
+            outpainting techniques must support <strong>large spatial extrapolation</strong> over
+            <strong>long video sequences</strong>.
+          </p>
+          <p>
+            However, existing methods typically focus on either long video sequences or large spatial
+            extrapolation, and rarely address both simultaneously. They also still exhibit notable
+            limitations even within their respective settings.
+          </p>
+          <p>
+            In this paper, we propose <strong>HL-OutPaint</strong>, a practical video outpainting framework
+            that enables <strong>high-resolution video outpainting for long video sequences</strong> while
+            maintaining <strong>spatio-temporal coherence</strong>. Our approach follows a
+            <strong>coarse-to-fine</strong> strategy with a two-stage pipeline. Specifically, we first
+            construct a <strong>Global Coarse Scaffold (GCS)</strong>, a low-resolution representation that
+            captures the global video structure and dominant motion patterns across the entire sequence.
+            Building on this scaffold, HL-OutPaint refines the coarse prediction into spatially detailed and
+            temporally consistent content.
+          </p>
+          <p>
+            By separating <strong>global structure estimation</strong> from <strong>fine-grained
+            synthesis</strong>, our framework preserves spatio-temporal coherence even under large spatial
+            expansion and long video sequences. Extensive experiments demonstrate that HL-OutPaint
+            consistently outperforms existing methods on challenging video outpainting scenarios involving
+            wide spatial extrapolation and long video sequences.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            HL-OutPaint follows a <strong>two-stage coarse-to-fine framework</strong> for
+            high-resolution long-range video outpainting.
+          </p>
+          <p>
+            In the first stage, the method constructs a <strong>Global Coarse Scaffold (GCS)</strong>
+            from a spatially downsampled video by jointly modeling <strong>sparse global keyframes</strong>
+            and <strong>local temporal windows</strong> with frame swapping, so that both global structure
+            and short-range motion cues are preserved.
+          </p>
+          <p>
+            This scaffold is further refined in a <strong>multi-scale</strong> manner by progressively
+            inserting additional keyframes, which improves temporal coverage for very long videos.
+          </p>
+          <p>
+            In the second stage, the generated GCS guides video outpainting through
+            <strong>low-resolution temporal completion</strong> followed by
+            <strong>high-resolution spatial refinement</strong>. Finally, HL-OutPaint applies
+            <strong>spatio-temporal tile-based denoising</strong> with overlap blending, enabling coherent
+            and detailed outpainting over large spatial expansions and long video sequences.
+          </p>
+        </div>
+
+        <div class="box">
+          <p class="has-text-weight-semibold">Method Overview</p>
+          <figure class="image">
+            <img src="./hl-outpaint_static/images/overview.png"
+                 alt="Method overview for HL-OutPaint.">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Demo Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/FDY4wZeeU2M?rel=0"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="dataset">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Dataset</h2>
+        <div class="content has-text-justified">
+          <p>
+            To further evaluate practical long-video scenarios, we construct two datasets, Long-Video and
+            Short-Form, collected from Pexels, each containing videos of approximately 500 frames.
+          </p>
+          <p>
+            The <strong>Long-Video</strong> dataset includes 20 videos and is evaluated under spatial
+            extrapolation from <strong>512 x 512</strong> to <strong>1280 x 720</strong>.
+          </p>
+          <p>
+            The <strong>Short-Form</strong> dataset consists of 9 portrait-format videos and is used to
+            evaluate the conversion from <strong>416 x 720</strong> vertical videos to a
+            <strong>1280 x 720</strong> horizontal format.
+          </p>
+        </div>
+
+        <div class="columns">
+          <div class="column">
+            <div class="box">
+              <h3 class="title is-4">Long-Video</h3>
+              <p>20 videos from Pexels for long-range video outpainting evaluation.</p>
+              <a class="button is-link is-light" href="./hl-outpaint_static/DATASET/Long-Video.txt">View source list</a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box">
+              <h3 class="title is-4">Short-Form</h3>
+              <p>9 portrait-format videos for vertical-to-horizontal outpainting evaluation.</p>
+              <a class="button is-link is-light" href="./hl-outpaint_static/DATASET/Short-Form.txt">View source list</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{park2026hloutpaint,
   title={HL-OutPaint: High-Resolution Long-Range Video Outpainting with a Global Coarse Scaffold},
   author={Park, Jeongeun and Han, Janghyeok and Kim, Geonung and Lee, Hyun-Seung and Choi, Kyuha and Han, Youngseok and Cho, Sunghyun},
   journal={SIGGRAPH},
   year={2026}
-}
-  </pre>
+}</code></pre>
+  </div>
+</section>
 
-</div>
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This project page is based on the Nerfies website template and has been adapted for
+            HL-OutPaint.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    var syncing = new WeakMap();
+    var groupedVideos = {};
+
+    function getGroupVideos(video) {
+      var group = video.dataset.syncGroup;
+      return group ? groupedVideos[group] || [] : [];
+    }
+
+    function syncPeers(source, action) {
+      var peers = getGroupVideos(source);
+      peers.forEach(function(target) {
+        if (target === source) {
+          return;
+        }
+        syncing.set(target, true);
+        action(target);
+      });
+    }
+
+    function releaseSyncFlag(video) {
+      window.setTimeout(function() {
+        syncing.set(video, false);
+      }, 0);
+    }
+
+    document.querySelectorAll('video[data-sync-group]').forEach(function(video) {
+      var group = video.dataset.syncGroup;
+      if (!groupedVideos[group]) {
+        groupedVideos[group] = [];
+      }
+      groupedVideos[group].push(video);
+      syncing.set(video, false);
+    });
+
+    Object.keys(groupedVideos).forEach(function(group) {
+      groupedVideos[group].forEach(function(video) {
+        video.addEventListener('play', function() {
+          if (syncing.get(video)) {
+            releaseSyncFlag(video);
+            return;
+          }
+          syncPeers(video, function(target) {
+            if (Math.abs(target.currentTime - video.currentTime) > 0.12) {
+              target.currentTime = video.currentTime;
+            }
+            var playPromise = target.play();
+            if (playPromise && typeof playPromise.catch === 'function') {
+              playPromise.catch(function() {});
+            }
+            releaseSyncFlag(target);
+          });
+        });
+
+        video.addEventListener('pause', function() {
+          if (syncing.get(video)) {
+            releaseSyncFlag(video);
+            return;
+          }
+          syncPeers(video, function(target) {
+            target.pause();
+            if (Math.abs(target.currentTime - video.currentTime) > 0.12) {
+              target.currentTime = video.currentTime;
+            }
+            releaseSyncFlag(target);
+          });
+        });
+
+        video.addEventListener('seeking', function() {
+          if (syncing.get(video)) {
+            releaseSyncFlag(video);
+            return;
+          }
+          syncPeers(video, function(target) {
+            target.currentTime = video.currentTime;
+            releaseSyncFlag(target);
+          });
+        });
+
+        video.addEventListener('ratechange', function() {
+          if (syncing.get(video)) {
+            releaseSyncFlag(video);
+            return;
+          }
+          syncPeers(video, function(target) {
+            target.playbackRate = video.playbackRate;
+            releaseSyncFlag(target);
+          });
+        });
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
