@@ -6,7 +6,7 @@
         content="HL-OutPaint is a high-resolution long-range video outpainting framework with a global coarse scaffold for large spatial extrapolation and long video sequences.">
   <meta name="keywords" content="HL-OutPaint, Video Outpainting, SIGGRAPH 2026, Long Video, High Resolution">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HL-OutPaint: High-Resolution Long-Range Video Outpainting with a Global Coarse Scaffold</title>
+  <title>HL-OutPaint: Coarse-to-Fine Video Outpainting for High-Resolution Long-Range Videos</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -18,71 +18,105 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./hl-outpaint_static/css/index.css">
-  <link rel="icon" href="./hl-outpaint_static/images/favicon.svg">
+  <link rel="icon" type="image/png" href="./hl-outpaint_static/images/blue_final.png">
+  <script defer src="./hl-outpaint_static/js/fontawesome.all.min.js"></script>
 </head>
 <body>
 
 <section class="hero">
   <div class="hero-body">
-    <div class="container is-max-desktop">
+    <div class="container header-container">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <p class="publication-venue">SIGGRAPH 2026</p>
-          <h1 class="title is-1 publication-title">HL-OutPaint</h1>
-          <h2 class="subtitle is-4">
-            High-Resolution Long-Range Video Outpainting with a Global Coarse Scaffold
-          </h2>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">Jeongeun Park<sup>1</sup>,</span>
-            <span class="author-block">Janghyeok Han<sup>2</sup>,</span>
-            <span class="author-block">Geonung Kim<sup>3</sup>,</span>
-            <span class="author-block">Hyun-Seung Lee<sup>4</sup>,</span>
-            <span class="author-block">Kyuha Choi<sup>4</sup>,</span>
-            <span class="author-block">Youngseok Han<sup>4</sup>,</span>
-            <span class="author-block">Sunghyun Cho<sup>5</sup></span>
+          <div class="brand-title-wrap">
+            <div class="brand-title-row">
+              <h1 class="title publication-title main-title">
+                <span class="accent">HL</span>-OutPaint
+              </h1>
+              <img class="brand-mark"
+                   src="./hl-outpaint_static/images/blue_final.png"
+                   alt="">
+            </div>
+            <h2 class="subtitle publication-subtitle">
+              Coarse-to-Fine Video Outpainting for
+              <span class="accent">High</span>-Resolution
+              <span class="accent">Long</span>-Range Videos
+            </h2>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block">POSTECH, Samsung Electronics (Visual Display Business)</span>
+            <span class="author-block"><a href="https://koyy001.github.io/" target="_blank" rel="noopener noreferrer">Jeongeun Park</a>,</span>
+            <span class="author-block"><a href="https://cg.postech.ac.kr/" target="_blank" rel="noopener noreferrer">Janghyeok Han</a>,</span>
+            <span class="author-block"><a href="https://kimgeonung.github.io/" target="_blank" rel="noopener noreferrer">Geonung Kim</a>,</span>
+            <span class="author-block"><a href="https://www.samsung-dxrecruit.com/dept/detail/C0001" target="_blank" rel="noopener noreferrer">Hyun-Seung Lee</a>,</span>
+            <span class="author-block"><a href="https://www.samsung-dxrecruit.com/dept/detail/C0001" target="_blank" rel="noopener noreferrer">Kyuha Choi</a>,</span>
+            <span class="author-block"><a href="https://www.samsung-dxrecruit.com/dept/detail/C0001" target="_blank" rel="noopener noreferrer">Youngseok Han</a>,</span>
+            <span class="author-block"><a href="https://www.scho.pe.kr/" target="_blank" rel="noopener noreferrer">Sunghyun Cho</a></span>
           </div>
 
+          <div class="is-size-5 publication-venue">
+            SIGGRAPH 2026
+          </div>
+
+          <div class="is-size-5 publication-authors publication-affiliations">
+            <span class="author-block"><sup>1</sup>POSTECH,</span>
+            <span class="author-block"><sup>2</sup>Visual Display Business, Samsung Electronics</span>
+          </div>
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2503.07598"
+                <a href="https://koyy001.github.io/Publications/hl-outpaint"
+                   target="_blank"
+                   rel="noopener noreferrer"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Github</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://huggingface.co/koyy001/HL_OutPaint"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-cube"></i>
+                  </span>
+                  <span>Hugging Face</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=3EtIBPMllGQ"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2605.17543"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://youtu.be/FDY4wZeeU2M"
+                <a href="https://arxiv.org/abs/2605.17543"
+                   target="_blank"
+                   rel="noopener noreferrer"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="fab fa-youtube"></i>
+                    <i class="fas fa-file-alt"></i>
                   </span>
-                  <span>Demo Video</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://huggingface.co/koyy001/HL_OutPaint"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-cube"></i>
-                  </span>
-                  <span>Model</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="#dataset"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="far fa-images"></i>
-                  </span>
-                  <span>Dataset</span>
+                  <span>arXiv</span>
                 </a>
               </span>
             </div>
@@ -93,155 +127,214 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline controls height="100%">
-        <source src="./hl-outpaint_static/videos/output/boat.mp4" type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        HL-OutPaint enables high-resolution video outpainting over long video sequences while preserving
-        global structure, local motion, and spatio-temporal coherence.
-      </h2>
+<section class="section results-section">
+  <div class="container results-container">
+    <div class="comparison-carousel" aria-label="HL-OutPaint video comparison samples">
+      <button class="carousel-nav carousel-nav-prev" type="button" aria-label="Previous sample">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="comparison-viewport">
+        <div class="comparison-track">
+          <div class="comparison-slide is-active">
+            <div class="comparison-sample" data-sample="cat-girl" style="--split: 50%;">
+              <video class="compare-video compare-output" muted loop playsinline preload="none">
+                <source data-src="./hl-outpaint_static/videos/output_final/cat_girl.mp4" type="video/mp4">
+              </video>
+              <div class="compare-input-wrap">
+                <video class="compare-video compare-input" muted loop playsinline preload="none">
+                  <source data-src="./hl-outpaint_static/videos/input/cat_girl.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="compare-label compare-label-left">Input</div>
+              <div class="compare-label compare-label-right">Output</div>
+              <div class="compare-meta"><span>Input: 512x512 | Output: 2560x2560</span><span>178 frames</span></div>
+              <div class="compare-handle" role="slider" tabindex="0" aria-label="Input output comparison split" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+            </div>
+          </div>
+
+          <div class="comparison-slide">
+            <div class="comparison-sample" data-sample="008" style="--split: 50%;">
+              <video class="compare-video compare-output" muted loop playsinline preload="none">
+                <source data-src="./hl-outpaint_static/videos/output_final/008.mp4" type="video/mp4">
+              </video>
+              <div class="compare-input-wrap">
+                <video class="compare-video compare-input" muted loop playsinline preload="none">
+                  <source data-src="./hl-outpaint_static/videos/input/008.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="compare-label compare-label-left">Input</div>
+              <div class="compare-label compare-label-right">Output</div>
+              <div class="compare-meta"><span>Input: 416x720 | Output: 1280x720</span><span>640 frames</span></div>
+              <div class="compare-handle" role="slider" tabindex="0" aria-label="Input output comparison split" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+            </div>
+          </div>
+
+          <div class="comparison-slide">
+            <div class="comparison-sample" data-sample="dog" style="--split: 50%;">
+              <video class="compare-video compare-output" muted loop playsinline preload="none">
+                <source data-src="./hl-outpaint_static/videos/output_final/dog.mp4" type="video/mp4">
+              </video>
+              <div class="compare-input-wrap">
+                <video class="compare-video compare-input" muted loop playsinline preload="none">
+                  <source data-src="./hl-outpaint_static/videos/input/dog.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="compare-label compare-label-left">Input</div>
+              <div class="compare-label compare-label-right">Output</div>
+              <div class="compare-meta"><span>Input: 721x416 | Output: 2560x2560</span><span>2312 frames</span></div>
+              <div class="compare-handle" role="slider" tabindex="0" aria-label="Input output comparison split" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+            </div>
+          </div>
+
+          <div class="comparison-slide">
+            <div class="comparison-sample" data-sample="stroller" style="--split: 50%;">
+              <video class="compare-video compare-output" muted loop playsinline preload="none">
+                <source data-src="./hl-outpaint_static/videos/output_final/stroller.mp4" type="video/mp4">
+              </video>
+              <div class="compare-input-wrap">
+                <video class="compare-video compare-input" muted loop playsinline preload="none">
+                  <source data-src="./hl-outpaint_static/videos/input/stroller.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="compare-label compare-label-left">Input</div>
+              <div class="compare-label compare-label-right">Output</div>
+              <div class="compare-meta"><span>Input: 512x512 | Output: 1920x1080</span><span>182 frames</span></div>
+              <div class="compare-handle" role="slider" tabindex="0" aria-label="Input output comparison split" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+            </div>
+          </div>
+
+          <div class="comparison-slide">
+            <div class="comparison-sample" data-sample="classic-car" style="--split: 50%;">
+              <video class="compare-video compare-output" muted loop playsinline preload="none">
+                <source data-src="./hl-outpaint_static/videos/output_final/classic-car.mp4" type="video/mp4">
+              </video>
+              <div class="compare-input-wrap">
+                <video class="compare-video compare-input" muted loop playsinline preload="none">
+                  <source data-src="./hl-outpaint_static/videos/input/classic-car.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="compare-label compare-label-left">Input</div>
+              <div class="compare-label compare-label-right">Output</div>
+              <div class="compare-meta"><span>Input: 512x512 | Output: 2560x2560</span><span>126 frames</span></div>
+              <div class="compare-handle" role="slider" tabindex="0" aria-label="Input output comparison split" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+            </div>
+          </div>
+
+          <div class="comparison-slide">
+            <div class="comparison-sample" data-sample="bmx-trees" style="--split: 50%;">
+              <video class="compare-video compare-output" muted loop playsinline preload="none">
+                <source data-src="./hl-outpaint_static/videos/output_final/bmx-trees.mp4" type="video/mp4">
+              </video>
+              <div class="compare-input-wrap">
+                <video class="compare-video compare-input" muted loop playsinline preload="none">
+                  <source data-src="./hl-outpaint_static/videos/input/bmx-trees.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="compare-label compare-label-left">Input</div>
+              <div class="compare-label compare-label-right">Output</div>
+              <div class="compare-meta"><span>Input: 512x512 | Output: 2560x2560</span><span>160 frames</span></div>
+              <div class="compare-handle" role="slider" tabindex="0" aria-label="Input output comparison split" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+            </div>
+          </div>
+
+          <div class="comparison-slide">
+            <div class="comparison-sample" data-sample="006" style="--split: 50%;">
+              <video class="compare-video compare-output" muted loop playsinline preload="none">
+                <source data-src="./hl-outpaint_static/videos/output_final/006.mp4" type="video/mp4">
+              </video>
+              <div class="compare-input-wrap">
+                <video class="compare-video compare-input" muted loop playsinline preload="none">
+                  <source data-src="./hl-outpaint_static/videos/input/006.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="compare-label compare-label-left">Input</div>
+              <div class="compare-label compare-label-right">Output</div>
+              <div class="compare-meta"><span>Input: 416x720 | Output: 1280x720</span><span>1000 frames</span></div>
+              <div class="compare-handle" role="slider" tabindex="0" aria-label="Input output comparison split" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+            </div>
+          </div>
+
+          <div class="comparison-slide">
+            <div class="comparison-sample" data-sample="007" style="--split: 50%;">
+              <video class="compare-video compare-output" muted loop playsinline preload="none">
+                <source data-src="./hl-outpaint_static/videos/output_final/007.mp4" type="video/mp4">
+              </video>
+              <div class="compare-input-wrap">
+                <video class="compare-video compare-input" muted loop playsinline preload="none">
+                  <source data-src="./hl-outpaint_static/videos/input/007.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="compare-label compare-label-left">Input</div>
+              <div class="compare-label compare-label-right">Output</div>
+              <div class="compare-meta"><span>Input: 512x512 | Output: 1280x720</span><span>1000 frames</span></div>
+              <div class="compare-handle" role="slider" tabindex="0" aria-label="Input output comparison split" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+            </div>
+          </div>
+
+          <div class="comparison-slide">
+            <div class="comparison-sample" data-sample="hockey" style="--split: 50%;">
+              <video class="compare-video compare-output" muted loop playsinline preload="none">
+                <source data-src="./hl-outpaint_static/videos/output_final/hockey.mp4" type="video/mp4">
+              </video>
+              <div class="compare-input-wrap">
+                <video class="compare-video compare-input" muted loop playsinline preload="none">
+                  <source data-src="./hl-outpaint_static/videos/input/hockey.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="compare-label compare-label-left">Input</div>
+              <div class="compare-label compare-label-right">Output</div>
+              <div class="compare-meta"><span>Input: 512x512 | Output: 1920x1080</span><span>150 frames</span></div>
+              <div class="compare-handle" role="slider" tabindex="0" aria-label="Input output comparison split" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+            </div>
+          </div>
+
+          <div class="comparison-slide">
+            <div class="comparison-sample" data-sample="012" style="--split: 50%;">
+              <video class="compare-video compare-output" muted loop playsinline preload="none">
+                <source data-src="./hl-outpaint_static/videos/output_final/012.mp4" type="video/mp4">
+              </video>
+              <div class="compare-input-wrap">
+                <video class="compare-video compare-input" muted loop playsinline preload="none">
+                  <source data-src="./hl-outpaint_static/videos/input/012.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="compare-label compare-label-left">Input</div>
+              <div class="compare-label compare-label-right">Output</div>
+              <div class="compare-meta"><span>Input: 512x512 | Output: 1280x720</span><span>744 frames</span></div>
+              <div class="compare-handle" role="slider" tabindex="0" aria-label="Input output comparison split" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+            </div>
+          </div>
+
+          <div class="comparison-slide">
+            <div class="comparison-sample" data-sample="017" style="--split: 50%;">
+              <video class="compare-video compare-output" muted loop playsinline preload="none">
+                <source data-src="./hl-outpaint_static/videos/output_final/017.mp4" type="video/mp4">
+              </video>
+              <div class="compare-input-wrap">
+                <video class="compare-video compare-input" muted loop playsinline preload="none">
+                  <source data-src="./hl-outpaint_static/videos/input/017.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="compare-label compare-label-left">Input</div>
+              <div class="compare-label compare-label-right">Output</div>
+              <div class="compare-meta"><span>Input: 512x512 | Output: 1280x720</span><span>1000 frames</span></div>
+              <div class="compare-handle" role="slider" tabindex="0" aria-label="Input output comparison split" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button class="carousel-nav carousel-nav-next" type="button" aria-label="Next sample">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="carousel-dots" aria-label="Select comparison sample"></div>
     </div>
-  </div>
-</section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Highlights</h2>
-        <div class="content has-text-justified">
-          <p>
-            HL-OutPaint supports arbitrary input widths and heights and performs flexible video outpainting
-            across diverse target aspect ratios.
-          </p>
-          <p>
-            The method uses a two-stage coarse-to-fine pipeline with a Global Coarse Scaffold (GCS) to
-            preserve global scene layout and dominant motion patterns before refining fine spatial details.
-          </p>
-          <p>
-            Below, each example compares the original input video with the outpainted result generated by
-            HL-OutPaint.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="columns is-multiline example-grid">
-      <div class="column is-half">
-        <div class="box">
-          <div class="columns is-mobile example-pair">
-            <div class="column example-pair-column">
-              <p class="has-text-weight-semibold">Input</p>
-              <video controls muted loop playsinline width="100%" data-sync-group="example-008">
-                <source src="./hl-outpaint_static/videos/input/008.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="column example-pair-column">
-              <p class="has-text-weight-semibold">HL-OutPaint Output</p>
-              <video controls muted loop playsinline width="100%" data-sync-group="example-008">
-                <source src="./hl-outpaint_static/videos/output/008.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-half">
-        <div class="box">
-          <div class="columns is-mobile example-pair">
-            <div class="column example-pair-column">
-              <p class="has-text-weight-semibold">Input</p>
-              <video controls muted loop playsinline width="100%" data-sync-group="example-012">
-                <source src="./hl-outpaint_static/videos/input/012.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="column example-pair-column">
-              <p class="has-text-weight-semibold">HL-OutPaint Output</p>
-              <video controls muted loop playsinline width="100%" data-sync-group="example-012">
-                <source src="./hl-outpaint_static/videos/output/012.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-half">
-        <div class="box">
-          <div class="columns is-mobile example-pair">
-            <div class="column example-pair-column">
-              <p class="has-text-weight-semibold">Input</p>
-              <video controls muted loop playsinline width="100%" data-sync-group="example-017">
-                <source src="./hl-outpaint_static/videos/input/017.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="column example-pair-column">
-              <p class="has-text-weight-semibold">HL-OutPaint Output</p>
-              <video controls muted loop playsinline width="100%" data-sync-group="example-017">
-                <source src="./hl-outpaint_static/videos/output/017.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-half">
-        <div class="box">
-          <div class="columns is-mobile example-pair">
-            <div class="column example-pair-column">
-              <p class="has-text-weight-semibold">Input</p>
-              <video controls muted loop playsinline width="100%" data-sync-group="example-stroller">
-                <source src="./hl-outpaint_static/videos/input/stroller.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="column example-pair-column">
-              <p class="has-text-weight-semibold">HL-OutPaint Output</p>
-              <video controls muted loop playsinline width="100%" data-sync-group="example-stroller">
-                <source src="./hl-outpaint_static/videos/output/stroller.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-half">
-        <div class="box">
-          <div class="columns is-mobile example-pair">
-            <div class="column example-pair-column">
-              <p class="has-text-weight-semibold">Input</p>
-              <video controls muted loop playsinline width="100%" data-sync-group="example-cat-girl">
-                <source src="./hl-outpaint_static/videos/input/cat_girl.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="column example-pair-column">
-              <p class="has-text-weight-semibold">HL-OutPaint Output</p>
-              <video controls muted loop playsinline width="100%" data-sync-group="example-cat-girl">
-                <source src="./hl-outpaint_static/videos/output/cat_girl.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-half">
-        <div class="box">
-          <div class="columns is-mobile example-pair">
-            <div class="column example-pair-column">
-              <p class="has-text-weight-semibold">Input</p>
-              <video controls muted loop playsinline width="100%" data-sync-group="example-boat">
-                <source src="./hl-outpaint_static/videos/input/boat.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="column example-pair-column">
-              <p class="has-text-weight-semibold">HL-OutPaint Output</p>
-              <video controls muted loop playsinline width="100%" data-sync-group="example-boat">
-                <source src="./hl-outpaint_static/videos/output/boat.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-        </div>
+    <div class="columns is-centered has-text-centered results-copy">
+      <div class="column is-two-thirds-desktop">
+        <p class="highlight-one-line">
+          HL-OutPaint supports <strong>arbitrary input widths, heights, and frame counts</strong> for flexible video outpainting across <strong>diverse target aspect ratios</strong>.
+        </p>
       </div>
     </div>
   </div>
@@ -254,34 +347,28 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            <strong>Video outpainting</strong> is the task of generating plausible visual content beyond
-            the original spatial extent of a video. With video content increasingly consumed on displays
-            with diverse aspect ratios and resolutions, video outpainting plays a key role in adapting
-            videos to heterogeneous display formats. To accommodate such practical use cases, video
-            outpainting techniques must support <strong>large spatial extrapolation</strong> over
-            <strong>long video sequences</strong>.
+            <strong>Video outpainting</strong> generates plausible visual content beyond a video's
+            original spatial extent, playing a key role in adapting videos to diverse display formats. To
+            support such use cases, it must enable <strong>large spatial extrapolation</strong> over
+            <strong>long sequences</strong>. However, most existing methods address only one challenge or
+            lack explicit mechanisms, leaving notable limitations.
           </p>
           <p>
-            However, existing methods typically focus on either long video sequences or large spatial
-            extrapolation, and rarely address both simultaneously. They also still exhibit notable
-            limitations even within their respective settings.
+            In this paper, we propose <strong>HL-OutPaint</strong>, a high-resolution video outpainting
+            framework for long sequences. Our approach follows a <strong>coarse-to-fine strategy</strong>
+            with a two-stage pipeline. We first construct a <strong>Global Coarse Guidance (GCG)</strong>,
+            a low-resolution representation that captures global structure and dominant motion across the
+            video. Unlike naive downsampling, the GCG is built via a
+            <strong>global-local frame swapping mechanism</strong> that couples sparse global keyframes
+            with local temporal windows and exchanges information during sampling.
           </p>
           <p>
-            In this paper, we propose <strong>HL-OutPaint</strong>, a practical video outpainting framework
-            that enables <strong>high-resolution video outpainting for long video sequences</strong> while
-            maintaining <strong>spatio-temporal coherence</strong>. Our approach follows a
-            <strong>coarse-to-fine</strong> strategy with a two-stage pipeline. Specifically, we first
-            construct a <strong>Global Coarse Scaffold (GCS)</strong>, a low-resolution representation that
-            captures the global video structure and dominant motion patterns across the entire sequence.
-            Building on this scaffold, HL-OutPaint refines the coarse prediction into spatially detailed and
-            temporally consistent content.
-          </p>
-          <p>
-            By separating <strong>global structure estimation</strong> from <strong>fine-grained
-            synthesis</strong>, our framework preserves spatio-temporal coherence even under large spatial
-            expansion and long video sequences. Extensive experiments demonstrate that HL-OutPaint
-            consistently outperforms existing methods on challenging video outpainting scenarios involving
-            wide spatial extrapolation and long video sequences.
+            This enables the GCG to encode both <strong>long-term structural consistency</strong> and
+            <strong>short-term temporal dynamics</strong> in a unified representation. Guided by this
+            representation, HL-OutPaint performs <strong>high-resolution outpainting</strong> to generate
+            spatially detailed and temporally consistent content. Extensive experiments show that
+            HL-OutPaint outperforms existing methods in challenging scenarios with
+            <strong>wide spatial extrapolation</strong> and <strong>long video sequences</strong>.
           </p>
         </div>
       </div>
@@ -293,37 +380,55 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3 has-text-centered">Method</h2>
-        <div class="content has-text-justified">
+        <h2 class="title is-3 has-text-centered method-heading">Method Overview</h2>
+        <figure class="method-figure">
+          <img src="./hl-outpaint_static/images/overview.png"
+               alt="Method overview for HL-OutPaint.">
+        </figure>
+        <div class="content has-text-justified method-caption">
           <p>
-            HL-OutPaint follows a <strong>two-stage coarse-to-fine framework</strong> for
-            high-resolution long-range video outpainting.
-          </p>
-          <p>
-            In the first stage, the method constructs a <strong>Global Coarse Scaffold (GCS)</strong>
-            from a spatially downsampled video by jointly modeling <strong>sparse global keyframes</strong>
-            and <strong>local temporal windows</strong> with frame swapping, so that both global structure
-            and short-range motion cues are preserved.
-          </p>
-          <p>
-            This scaffold is further refined in a <strong>multi-scale</strong> manner by progressively
-            inserting additional keyframes, which improves temporal coverage for very long videos.
-          </p>
-          <p>
-            In the second stage, the generated GCS guides video outpainting through
-            <strong>low-resolution temporal completion</strong> followed by
-            <strong>high-resolution spatial refinement</strong>. Finally, HL-OutPaint applies
-            <strong>spatio-temporal tile-based denoising</strong> with overlap blending, enabling coherent
-            and detailed outpainting over large spatial expansions and long video sequences.
+            Overall framework of the proposed <strong>HL-OutPaint</strong>. <strong>(a)</strong>
+            HL-OutPaint consists of two stages: <strong>Global Coarse Guidance Construction</strong> and
+            <strong>GCG-Guided Video Outpainting</strong>. <strong>(b)</strong>
+            <strong>Global Coarse Guidance Construction</strong> generates <strong>GCG</strong> from a
+            <strong>spatio-temporally compressed video</strong>; at every diffusion timestep,
+            <strong>global-local frame swapping</strong> aligns global keyframes with their local temporal
+            windows, producing a <strong>globally consistent</strong> yet <strong>locally well-aligned</strong>
+            GCG. <strong>(c)</strong> <strong>GCG-Guided Video Outpainting</strong> uses the GCG to
+            outpaint <strong>large-scale videos</strong>.
           </p>
         </div>
 
-        <div class="box">
-          <p class="has-text-weight-semibold">Method Overview</p>
-          <figure class="image">
-            <img src="./hl-outpaint_static/images/overview.png"
-                 alt="Method overview for HL-OutPaint.">
-          </figure>
+        <h2 class="title is-3 has-text-centered method-heading">Key Idea</h2>
+        <figure class="method-figure">
+          <img src="./hl-outpaint_static/images/key_local_window.png"
+               alt="Key idea for global-local frame swapping.">
+        </figure>
+
+        <div class="content has-text-justified method-caption">
+          <p>
+            The keyframes at the top provide <strong>global temporal anchors</strong>: they see the video
+            sparsely over a long time span, so they are good at preserving the overall scene layout and
+            long-range motion. However, because they are sampled sparsely, a keyframe alone can miss
+            <strong>local details that happen between keyframes</strong>, such as the correct shape and
+            position of a moving sign.
+          </p>
+          <p>
+            To recover these missing cues, HL-OutPaint also builds a <strong>local temporal window</strong>
+            around each keyframe, shown in the middle row. This window contains neighboring frames around
+            the selected keyframe, so it carries short-term motion and object appearance that the global
+            keyframe sequence may overlook. During early denoising, <strong>global-local frame swapping</strong>
+            copies the latent state of the same time instant between the global keyframe path and its local
+            window path.
+          </p>
+          <p>
+            Intuitively, the <strong>global keyframes lend long-range structure</strong>, while the
+            <strong>local windows lend nearby temporal evidence</strong>. Without this exchange, the
+            outpainted keyframe can become structurally inconsistent, as shown in <strong>(a)</strong>.
+            With swapping, as shown in <strong>(b)</strong>, the keyframe inherits the local window's fine
+            cues while staying aligned with the global video context, producing a <strong>GCG</strong> that
+            is both <strong>globally stable</strong> and <strong>locally coherent</strong>.
+          </p>
         </div>
       </div>
     </div>
@@ -334,9 +439,9 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Demo Video</h2>
+        <h2 class="title is-3">HL-OutPaint Demo Video</h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/FDY4wZeeU2M?rel=0"
+          <iframe src="https://www.youtube.com/embed/3EtIBPMllGQ?rel=0"
                   frameborder="0"
                   allow="autoplay; encrypted-media"
                   allowfullscreen></iframe>
@@ -346,56 +451,14 @@
   </div>
 </section>
 
-<section class="section" id="dataset">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">Dataset</h2>
-        <div class="content has-text-justified">
-          <p>
-            To further evaluate practical long-video scenarios, we construct two datasets, Long-Video and
-            Short-Form, collected from Pexels, each containing videos of approximately 500 frames.
-          </p>
-          <p>
-            The <strong>Long-Video</strong> dataset includes 20 videos and is evaluated under spatial
-            extrapolation from <strong>512 x 512</strong> to <strong>1280 x 720</strong>.
-          </p>
-          <p>
-            The <strong>Short-Form</strong> dataset consists of 9 portrait-format videos and is used to
-            evaluate the conversion from <strong>416 x 720</strong> vertical videos to a
-            <strong>1280 x 720</strong> horizontal format.
-          </p>
-        </div>
-
-        <div class="columns">
-          <div class="column">
-            <div class="box">
-              <h3 class="title is-4">Long-Video</h3>
-              <p>20 videos from Pexels for long-range video outpainting evaluation.</p>
-              <a class="button is-link is-light" href="./hl-outpaint_static/DATASET/Long-Video.txt">View source list</a>
-            </div>
-          </div>
-          <div class="column">
-            <div class="box">
-              <h3 class="title is-4">Short-Form</h3>
-              <p>9 portrait-format videos for vertical-to-horizontal outpainting evaluation.</p>
-              <a class="button is-link is-light" href="./hl-outpaint_static/DATASET/Short-Form.txt">View source list</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2026hloutpaint,
-  title={HL-OutPaint: High-Resolution Long-Range Video Outpainting with a Global Coarse Scaffold},
-  author={Park, Jeongeun and Han, Janghyeok and Kim, Geonung and Lee, Hyun-Seung and Choi, Kyuha and Han, Youngseok and Cho, Sunghyun},
-  journal={SIGGRAPH},
-  year={2026}
+    <pre><code>@article{HLOutPaint,
+  author    = {Park, Jeongeun and Han, Janghyeok and Kim, Geonung and Lee, Hyun-Seung and Choi, Kyuha and Han, Youngseok and Cho, Sunghyun},
+  title     = {HL-OutPaint: Coarse-to-Fine Video Outpainting for High-Resolution Long-Range Videos},
+  journal   = {SIGGRAPH},
+  year      = {2026},
 }</code></pre>
   </div>
 </section>
@@ -417,96 +480,234 @@
 
 <script>
   (function() {
-    var syncing = new WeakMap();
-    var groupedVideos = {};
-
-    function getGroupVideos(video) {
-      var group = video.dataset.syncGroup;
-      return group ? groupedVideos[group] || [] : [];
+    var carousel = document.querySelector('.comparison-carousel');
+    if (!carousel) {
+      return;
     }
 
-    function syncPeers(source, action) {
-      var peers = getGroupVideos(source);
-      peers.forEach(function(target) {
-        if (target === source) {
-          return;
+    var track = carousel.querySelector('.comparison-track');
+    var slides = Array.prototype.slice.call(carousel.querySelectorAll('.comparison-slide'));
+    var dotsWrap = carousel.querySelector('.carousel-dots');
+    var prev = carousel.querySelector('.carousel-nav-prev');
+    var next = carousel.querySelector('.carousel-nav-next');
+    var index = 0;
+    var isHovering = false;
+
+    function getSlideVideos(slide) {
+      return Array.prototype.slice.call(slide.querySelectorAll('video'));
+    }
+
+    function loadSlide(slide) {
+      getSlideVideos(slide).forEach(function(video) {
+        var shouldLoad = false;
+        Array.prototype.slice.call(video.querySelectorAll('source')).forEach(function(source) {
+          if (!source.getAttribute('src') && source.dataset.src) {
+            source.setAttribute('src', source.dataset.src);
+            shouldLoad = true;
+          }
+        });
+        if (shouldLoad) {
+          video.load();
         }
-        syncing.set(target, true);
-        action(target);
       });
     }
 
-    function releaseSyncFlag(video) {
-      window.setTimeout(function() {
-        syncing.set(video, false);
-      }, 0);
+    function unloadSlide(slide) {
+      getSlideVideos(slide).forEach(function(video) {
+        video.pause();
+        video.removeAttribute('src');
+        Array.prototype.slice.call(video.querySelectorAll('source')).forEach(function(source) {
+          source.removeAttribute('src');
+        });
+        video.load();
+      });
     }
 
-    document.querySelectorAll('video[data-sync-group]').forEach(function(video) {
-      var group = video.dataset.syncGroup;
-      if (!groupedVideos[group]) {
-        groupedVideos[group] = [];
+    function syncVideos(slide) {
+      var videos = getSlideVideos(slide);
+      if (videos.length < 2) {
+        return;
       }
-      groupedVideos[group].push(video);
-      syncing.set(video, false);
-    });
+      var source = videos[0];
+      videos.slice(1).forEach(function(video) {
+        if (Math.abs(video.currentTime - source.currentTime) > 0.08) {
+          video.currentTime = source.currentTime;
+        }
+        video.playbackRate = source.playbackRate;
+      });
+    }
 
-    Object.keys(groupedVideos).forEach(function(group) {
-      groupedVideos[group].forEach(function(video) {
-        video.addEventListener('play', function() {
-          if (syncing.get(video)) {
-            releaseSyncFlag(video);
-            return;
-          }
-          syncPeers(video, function(target) {
-            if (Math.abs(target.currentTime - video.currentTime) > 0.12) {
-              target.currentTime = video.currentTime;
-            }
-            var playPromise = target.play();
-            if (playPromise && typeof playPromise.catch === 'function') {
-              playPromise.catch(function() {});
-            }
-            releaseSyncFlag(target);
-          });
-        });
+    function playSlide(slide) {
+      loadSlide(slide);
+      syncVideos(slide);
+      getSlideVideos(slide).forEach(function(video) {
+        video.muted = true;
+        var promise = video.play();
+        if (promise && typeof promise.catch === 'function') {
+          promise.catch(function() {});
+        }
+      });
+    }
 
-        video.addEventListener('pause', function() {
-          if (syncing.get(video)) {
-            releaseSyncFlag(video);
-            return;
-          }
-          syncPeers(video, function(target) {
-            target.pause();
-            if (Math.abs(target.currentTime - video.currentTime) > 0.12) {
-              target.currentTime = video.currentTime;
-            }
-            releaseSyncFlag(target);
-          });
-        });
+    function pauseSlide(slide) {
+      getSlideVideos(slide).forEach(function(video) {
+        video.pause();
+      });
+    }
 
-        video.addEventListener('seeking', function() {
-          if (syncing.get(video)) {
-            releaseSyncFlag(video);
-            return;
-          }
-          syncPeers(video, function(target) {
-            target.currentTime = video.currentTime;
-            releaseSyncFlag(target);
-          });
-        });
+    function updateCarousel(nextIndex) {
+      index = (nextIndex + slides.length) % slides.length;
+      loadSlide(slides[index]);
+      track.style.transform = 'translateX(' + (-index * 100) + '%)';
+      slides.forEach(function(slide, slideIndex) {
+        slide.classList.toggle('is-active', slideIndex === index);
+        if (slideIndex !== index) {
+          unloadSlide(slide);
+        }
+      });
+      Array.prototype.slice.call(dotsWrap.children).forEach(function(dot, dotIndex) {
+        dot.classList.toggle('is-active', dotIndex === index);
+      });
+      if (isHovering) {
+        playSlide(slides[index]);
+      }
+    }
 
-        video.addEventListener('ratechange', function() {
-          if (syncing.get(video)) {
-            releaseSyncFlag(video);
-            return;
+    function setSplit(sample, clientX) {
+      var rect = sample.getBoundingClientRect();
+      var pct = ((clientX - rect.left) / rect.width) * 100;
+      pct = Math.max(5, Math.min(95, pct));
+      sample.style.setProperty('--split', pct + '%');
+      var handle = sample.querySelector('.compare-handle');
+      if (handle) {
+        handle.setAttribute('aria-valuenow', Math.round(pct));
+      }
+    }
+
+    slides.forEach(function(slide, slideIndex) {
+      var dot = document.createElement('button');
+      dot.className = 'carousel-dot' + (slideIndex === 0 ? ' is-active' : '');
+      dot.type = 'button';
+      dot.setAttribute('aria-label', 'Show sample ' + (slideIndex + 1));
+      dot.addEventListener('click', function() {
+        updateCarousel(slideIndex);
+      });
+      dotsWrap.appendChild(dot);
+
+      var sample = slide.querySelector('.comparison-sample');
+      var dragging = false;
+
+      sample.addEventListener('pointerdown', function(event) {
+        event.preventDefault();
+        if (window.getSelection) {
+          window.getSelection().removeAllRanges();
+        }
+        dragging = true;
+        sample.setPointerCapture(event.pointerId);
+        setSplit(sample, event.clientX);
+      });
+
+      sample.addEventListener('pointermove', function(event) {
+        if (dragging) {
+          event.preventDefault();
+          setSplit(sample, event.clientX);
+        }
+      });
+
+      sample.addEventListener('pointerup', function(event) {
+        dragging = false;
+        sample.releasePointerCapture(event.pointerId);
+      });
+
+      sample.addEventListener('pointercancel', function() {
+        dragging = false;
+      });
+
+      sample.querySelector('.compare-handle').addEventListener('keydown', function(event) {
+        var current = parseFloat(sample.style.getPropertyValue('--split')) || 50;
+        if (event.key === 'ArrowLeft') {
+          sample.style.setProperty('--split', Math.max(5, current - 3) + '%');
+          event.preventDefault();
+        }
+        if (event.key === 'ArrowRight') {
+          sample.style.setProperty('--split', Math.min(95, current + 3) + '%');
+          event.preventDefault();
+        }
+      });
+
+      getSlideVideos(slide).forEach(function(video) {
+        video.addEventListener('timeupdate', function() {
+          if (slideIndex === index) {
+            var peers = getSlideVideos(slide).filter(function(peer) { return peer !== video; });
+            peers.forEach(function(peer) {
+              if (Math.abs(peer.currentTime - video.currentTime) > 0.14) {
+                peer.currentTime = video.currentTime;
+              }
+            });
           }
-          syncPeers(video, function(target) {
-            target.playbackRate = video.playbackRate;
-            releaseSyncFlag(target);
-          });
         });
       });
     });
+
+    prev.addEventListener('click', function() {
+      updateCarousel(index - 1);
+    });
+
+    next.addEventListener('click', function() {
+      updateCarousel(index + 1);
+    });
+
+    carousel.addEventListener('mouseenter', function() {
+      isHovering = true;
+      playSlide(slides[index]);
+    });
+
+    carousel.addEventListener('mouseleave', function() {
+      isHovering = false;
+      pauseSlide(slides[index]);
+    });
+
+    carousel.addEventListener('focusin', function() {
+      isHovering = true;
+      playSlide(slides[index]);
+    });
+
+    carousel.addEventListener('focusout', function(event) {
+      if (!carousel.contains(event.relatedTarget)) {
+        isHovering = false;
+        pauseSlide(slides[index]);
+      }
+    });
+
+    document.addEventListener('keydown', function(event) {
+      if (!carousel.matches(':hover') && !carousel.contains(document.activeElement)) {
+        return;
+      }
+      if (event.key === 'ArrowLeft') {
+        updateCarousel(index - 1);
+      }
+      if (event.key === 'ArrowRight') {
+        updateCarousel(index + 1);
+      }
+    });
+
+    slides.forEach(function(slide) {
+      getSlideVideos(slide).forEach(function(video) {
+        video.addEventListener('loadedmetadata', function() {
+          syncVideos(slide);
+        });
+        video.addEventListener('ended', function() {
+          getSlideVideos(slide).forEach(function(peer) {
+            peer.currentTime = 0;
+          });
+          if (slide === slides[index] && isHovering) {
+            playSlide(slide);
+          }
+        });
+      });
+    });
+
+    updateCarousel(0);
   })();
 </script>
 
