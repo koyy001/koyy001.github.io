@@ -7,141 +7,99 @@
     <meta name="author" content="Jeongeun Park">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" type="image/png" href="image/image-from-rawpixel-id-16648155-png.png">
   </head>
 
-  <body>
-    <table style="width:100%;max-width:800px;margin:auto;">
-      <tr>
-        <td>
+  <body class="layout--research-home">
+    <main class="research-home" id="main">
+      <nav class="research-nav" aria-label="Main navigation">
+        <a class="research-nav__brand" href="/">Home</a>
+        <div class="research-nav__links">
+          <a href="#publications">Publications</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+          <a href="https://github.com/koyy001" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/jeongeun01" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </nav>
 
-          <!-- ================= PROFILE ================= -->
-          <table style="width:100%;">
-            <tr>
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                
-                <p class="name" style="text-align: center;">
-                  Jeongeun Park
-                </p>
+      <section class="research-hero" aria-labelledby="profile-title">
+        <div class="research-hero__content">
+          <h1 class="research-hero__name" id="profile-title">Jeongeun Park</h1>
+          <p class="research-hero__bio">
+            I'm a graduate student at POSTECH Department of Computer Science and Engineering.
+            I am currently in the integrated M.S./Ph.D. program at
+            <a href="http://cg.postech.ac.kr" target="_blank" rel="noopener">POSTECH Computer Graphics Laboratory</a>,
+            advised by Prof.
+            <a href="https://www.scho.pe.kr" target="_blank" rel="noopener">Sunghyun Cho</a>.
+          </p>
+        </div>
+        <figure class="research-hero__portrait">
+          <img src="image/JeongeunPark.jpeg" alt="Jeongeun Park">
+        </figure>
+      </section>
 
-                <p>
-                  I'm a graduate student at 
-                  POSTECH Department of Computer Science and Engineering.<br><br>
+      <section class="research-section" aria-labelledby="publications-title" id="publications">
+        <h2 class="research-section__title" id="publications-title">Publications</h2>
+        <div class="research-publications">
+          <article class="research-publication">
+            <div class="research-publication__media">
+              <a href="Publications/hl-outpaint.html">
+                <img src="image/cover.png" alt="HL-OutPaint teaser">
+              </a>
+            </div>
+            <div class="research-publication__body">
+              <h3 class="research-publication__title">HL-OutPaint: Coarse-to-Fine Video Outpainting for High-Resolution Long-Range Videos</h3>
+              <p class="research-publication__authors"><strong>Jeongeun Park</strong>, Janghyeok Han, Geonung Kim, Hyun-Seung Lee, Kyuha Choi, Youngseok Han, Sunghyun Cho</p>
+              <p class="research-publication__venue"><em>arXiv, 2026</em></p>
+              <div class="research-publication__links" aria-label="Publication links">
+                <a class="research-publication__link" href="https://arxiv.org/pdf/2605.17543" target="_blank" rel="noopener">Paper</a>
+                <a class="research-publication__link" href="https://arxiv.org/abs/2605.17543" target="_blank" rel="noopener">arXiv</a>
+                <a class="research-publication__link" href="Publications/hl-outpaint.html">Project</a>
+                <a class="research-publication__link" href="https://www.youtube.com/watch?v=3EtIBPMllGQ" target="_blank" rel="noopener">Video</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
 
-                  I am currently in the integrated M.S./Ph.D. program at 
-                  POSTECH Computer Graphics Laboratory, 
-                  advised by Prof. Sunghyun Cho.
-                </p>
+      <section class="research-section" aria-labelledby="education-title" id="education">
+        <h2 class="research-section__title" id="education-title">Education</h2>
+        <div class="research-list">
+          <p>
+            <strong>Ph.D. in Computer Science &amp; Engineering, POSTECH</strong><br>
+            Feb. 2025 – Present<br>
+            Computer Graphics Lab<br>
+            Advisor: Prof. Sunghyun Cho
+          </p>
+          <p>
+            <strong>B.S. in Computer Science &amp; Engineering, POSTECH</strong><br>
+            Feb. 2020 – Feb. 2025
+          </p>
+        </div>
+      </section>
 
-                <p style="text-align:center">
-                  Email: koyy001@postech.ac.kr <br>
-                  Phone: 010-6371-5317 <br>
-                  <a href="mailto:koyy001@gmail.com">Gmail</a> /
-                  <a href="https://github.com/koyy001">Github</a>
-                </p>
-              </td>
-
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <img style="width:100%;border-radius:50%;" src="https://koyy001.github.io/image/JeongeunPark.jpeg">
-              </td>
-            </tr>
-          </table>
-
-          <!-- ================= RESEARCH ================= -->
-          <table style="width:100%;">
-            <tr>
-              <td style="padding:16px;">
-                <h2>Research</h2>
-                <p>
-                  To be updated later.
-                </p>
-              </td>
-            </tr>
-          </table>
-
-          <!-- ================= PUBLICATIONS ================= -->
-          <table style="width:100%;">
-            <tr>
-              <td style="padding:16px;">
-                <h2>Publications</h2>
-          
-                <p>
-                  <strong>
-                    HL-OutPaint: High-Resolution Long-Range Video Outpainting with a Global Coarse Scaffold
-                  </strong><br>
-                  Jeongeun Park · Janghyeok Han · Geonung Kim · Hyun-Seung Lee · Kyuha Choi · Youngseok Han · Sunghyun Cho<br>
-                  <em>Allay 2040</em><br>
-                  POSTECH · Samsung Electronics, Visual Display Business<br>
-                  <a href="#">[paper]</a>
-                  <a href="https://koyy001.github.io/Publications/hl-outpaint.html">[project]</a>
-                </p>
-          
-              </td>
-            </tr>
-          </table>
-
-          <!-- ================= EXPERIENCE ================= -->
-          <table style="width:100%;">
-            <tr>
-              <td style="padding:16px;">
-                <h2>Experience</h2>
-                <p>
-                  To be updated later.
-                </p>
-              </td>
-            </tr>
-          </table>
-
-
-          <!-- ================= EDUCATION ================= -->
-          <table style="width:100%;">
-            <tr>
-              <td style="padding:16px;">
-                <h2>Education</h2>
-          
-                <p>
-                  <strong>Ph.D. in Computer Science & Engineering, POSTECH</strong><br>
-                  Feb. 2025 – Present<br>
-                  Computer Graphics Lab<br>
-                  Advisor: Prof. Sunghyun Cho
-                </p>
-          
-                <p>
-                  <strong>B.S. in Computer Science & Engineering, POSTECH</strong><br>
-                  Feb. 2020 – Feb. 2025
-                </p>
-          
-              </td>
-            </tr>
-          </table>
-
-          <!-- ================= CONTACT ================= -->
-          <table style="width:100%;">
-            <tr>
-              <td style="padding:16px;">
-                <h2>Contact</h2>
-
-                <p>
-                  <strong>Computer Graphics Lab</strong><br>
-                  Room 341, PIAI, POSTECH<br>
-                  77 Cheongam-Ro, Nam Gu, Pohang, Gyungbuk, Korea<br>
-                  Tel: +82-54-279-5652 / 5676<br>
-                  Email: cgpostech@gmail.com<br>
-                  Fax: +82-54-279-2299
-                </p>
-
-                <p>
-                  <strong>Personal Contact</strong><br>
-                  Email: koyy001@postech.ac.kr<br>
-                  Phone: 010-6371-5317<br>
-                  Gmail: koyy001@gmail.com<br>
-                  Github: <a href="https://github.com/koyy001">https://github.com/koyy001</a>
-                </p>
-              </td>
-            </tr>
-          </table>
-
-        </td>
-      </tr>
-    </table>
+      <section class="research-section" aria-labelledby="contact-title" id="contact">
+        <h2 class="research-section__title" id="contact-title">Contact</h2>
+        <div class="research-contact">
+          <p>
+            <strong>Computer Graphics Lab</strong><br>
+            Room 341, PIAI, POSTECH<br>
+            77 Cheongam-Ro, Nam Gu, Pohang, Gyungbuk, Korea<br>
+            Tel: +82-54-279-5652 / 5676<br>
+            Email: cgpostech@gmail.com<br>
+            Fax: +82-54-279-2299
+          </p>
+          <p>
+            <strong>Personal Contact</strong><br>
+            Email: <a href="mailto:koyy001@postech.ac.kr">koyy001@postech.ac.kr</a><br>
+            Phone: 010-6371-5317<br>
+            Gmail: <a href="mailto:koyy001@gmail.com">koyy001@gmail.com</a><br>
+            GitHub: <a href="https://github.com/koyy001" target="_blank" rel="noopener">https://github.com/koyy001</a><br>
+            LinkedIn: <a href="https://www.linkedin.com/in/jeongeun01" target="_blank" rel="noopener">https://www.linkedin.com/in/jeongeun01</a>
+          </p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
