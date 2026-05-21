@@ -151,7 +151,7 @@ span.highlight {
 }
 
 .layout--research-home a {
-  color: #7fd1a8;
+  color: #418462;
   font-weight: 900;
   text-decoration: none;
 }
@@ -242,7 +242,7 @@ span.highlight {
 }
 
 .research-section {
-  padding: 14px 0;
+  padding: 24px 0;
 }
 
 .research-section p {
@@ -358,6 +358,10 @@ span.highlight {
 .research-list p,
 .research-contact p {
   margin: 0 0 16px;
+}
+
+.research-contact p {
+  margin-bottom: 24px;
 }
 
 @media screen and (max-width: 760px) {
