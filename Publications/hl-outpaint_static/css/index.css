@@ -448,6 +448,18 @@ body {
   margin-top: 2.25rem;
 }
 
+.abstract-section {
+  padding-top: 1.5rem;
+}
+
+.section-divider {
+  background: #d9dde6;
+  border: 0;
+  height: 1px;
+  margin: 0 auto 3rem;
+  max-width: 980px;
+}
+
 .highlight-one-line {
   font-size: 0.94rem;
   line-height: 1.45;
