@@ -281,14 +281,14 @@ span.highlight {
   padding: 12px;
   border: 1px solid rgba(51, 65, 85, 0.1);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.55);
+  background: #d4d3ba;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset;
   transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
 }
 
 .research-publication:hover {
   border-color: rgba(15, 118, 110, 0.22);
-  background: rgba(255, 255, 255, 0.78);
+  background: #d4d3ba;
   transform: translateY(-1px);
 }
 
